@@ -1,0 +1,33 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 50px;
+    p {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 1.2em;
+    }
+}
+
+nav p:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 5px;
+    border: $blue 1px solid;
+    border-radius: 5px;
+    color: white;
+    background: $blue;
+}
+
+nav p:last-of-type:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    nav {
+        margin: auto;
+    }
+}
